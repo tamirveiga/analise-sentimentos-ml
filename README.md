@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Data%20Science-orange?logo=scikitlearn)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-green)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
 ---
 
