@@ -1,15 +1,27 @@
 # 💬 Análise de Sentimentos — IMDb, Yelp e Amazon
 
-Este projeto compara o desempenho de diferentes modelos de aprendizado de máquina na **classificação de sentimentos** (positivos e negativos) em três bases **balanceadas**: IMDb, Yelp e Amazon Reviews.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Data%20Science-orange?logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-green)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
 ---
 
-## 🧠 Modelos Utilizados
+## 🧠 Descrição do Projeto
+
+Este projeto compara o desempenho de diferentes **modelos de aprendizado de máquina** na **classificação de sentimentos** (positivos e negativos) em três bases de dados **balanceadas**:  
+📚 *IMDb, Yelp* e *Amazon Reviews*.
+
+As bases foram vetorizadas com **TF-IDF** e avaliadas com as métricas padrão de classificação.
+
+---
+
+## ⚙️ Modelos Utilizados
 
 - **Regressão Logística (LR)**
 - **XGBoost (XGB)**
 
-As bases foram vetorizadas com **TF-IDF** e avaliadas com as principais métricas de classificação.
+Esses modelos foram escolhidos por apresentarem bom equilíbrio entre desempenho e interpretabilidade em tarefas de *NLP (Processamento de Linguagem Natural)*.
 
 ---
 
@@ -30,16 +42,47 @@ As bases foram vetorizadas com **TF-IDF** e avaliadas com as principais métrica
 
 Os gráficos de comparação (**Curva ROC** e **Curva Precision-Recall**) estão disponíveis na pasta [`outputs/`](outputs/).
 
+Exemplo de gráficos gerados:
+- Comparação entre modelos (ROC e PR)
+- Distribuição de probabilidades
+- Avaliação das métricas principais
+
 ---
 
 ## 🧩 Conclusões
 
 - ✅ A **Regressão Logística (LR)** apresentou **melhor equilíbrio** entre precisão e recall em todas as bases.  
-- ⚙️ O **XGBoost (XGB)** teve bom desempenho, mas **probabilidades menos calibradas**.  
+- ⚙️ O **XGBoost (XGB)** teve desempenho competitivo, porém com **probabilidades menos calibradas**.  
 - ⚖️ Como as bases são **balanceadas**, o **AUC-ROC** é a métrica mais representativa.  
-- 💡 A LR é o modelo **mais consistente e interpretável** neste cenário.  
+- 💡 A **LR** é o modelo **mais consistente e interpretável** neste cenário.  
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
+```bash
+analise-sentimentos/
+│
+├── data/
+│   ├── imdb.csv
+│   ├── amazon.csv
+│   └── yelp.csv
+│
+├── notebooks/
+│   ├── baseImdb.ipynb
+│   ├── baseAmazon.ipynb
+│   └── baseYelp.ipynb
+│
+├── outputs/
+│   ├── imdb_curvas.png
+│   ├── amazon_curvas.png
+│   └── yelp_curvas.png
+│
+└── README.md
+
+---
+
+📘 **Tecnologias utilizadas:**  
+Python · Scikit-learn · XGBoost · Matplotlib
+
+✳️ *Projeto desenvolvido para comparação de modelos de classificação de sentimentos em bases balanceadas.*
