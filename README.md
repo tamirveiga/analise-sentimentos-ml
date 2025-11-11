@@ -82,7 +82,6 @@ analise-sentimentos/
 
 ---
 
-📘 **Tecnologias utilizadas:**  
-Python · Scikit-learn · XGBoost · Matplotlib
+📘 **Nota:** Este repositório faz parte de um projeto acadêmico voltado à análise de sentimentos com aprendizado de máquina.
 
-✳️ *Projeto desenvolvido para comparação de modelos de classificação de sentimentos em bases balanceadas.*
+🧠 Tecnologias: *Python*, *Scikit-learn*, *XGBoost*, *Matplotlib*
