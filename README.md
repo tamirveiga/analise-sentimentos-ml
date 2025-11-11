@@ -78,6 +78,7 @@ analise-sentimentos/
 │   └── yelp_curvas.png
 │
 └── README.md
+```
 
 ---
 
